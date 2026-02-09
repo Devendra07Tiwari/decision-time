@@ -76,7 +76,7 @@
 <body>
 
 <div class="card" id="questionBox">
-  <h2 id="questionText">Will you be mine? 💖</h2>
+  <h2 id="questionText">Ankita Will you be mine? 💖</h2>
   <button id="yes">YES</button>
   <button id="no">NO</button>
 </div>
@@ -96,8 +96,8 @@
     "Chocolate dunga 🍫",
     "Teddy bhi 🧸",
     "Care karunga 💖",
-    "Kabhi ignore nahi 🙈",
-    "Late replies band ❌",
+    "Try to make always happy 🙈",
+    "Ankita, just think—one day we’ll be together, visiting Mathura Prem Mandir ❤️",
     "Surprise gifts 🎁",
     "Movies saath 🎬",
     "Shopping le jaunga 🛍️",
@@ -107,7 +107,9 @@
     "Loyal rahunga 💍",
     "Promise pakka 🤞",
     "Ab bhi NO? 😭",
-    "Last chance 🥺"
+    "Last chance 🥺",
+    "I will wait forever ⏳",
+    "Ok , Koi baat nahi, I will keep trying until you say YES! 😘"
   ];
 
   let index = 0;
@@ -125,16 +127,16 @@
   }
 
   noBtn.addEventListener("click", () => {
-    // 1️⃣ show question FIRST
+    
     if (index < questions.length) {
       questionText.innerText = questions[index];
       index++;
     }
 
-    // 2️⃣ enable escaping AFTER text update
+    
     escapeEnabled = true;
 
-    // 3️⃣ move after slight delay (mobile safe)
+    
     setTimeout(moveNoButton, 300);
   });
 
